@@ -18,41 +18,13 @@ public class ProjectRunner {
      */
     public static void main(String[] args) {
         
-        //InfiniteGenerator alpha = new InfiniteGenerator();
-        /*
-        InfiniteCapacityGenerator alpha = new InfiniteCapacityGenerator();
-        while (true)
-        {
-            alpha.decadeIteration();
-        }
-        */
-        //System.out.println(alpha);
-        /*
-        EfficientInfiniteCapacityGenerator beta = new EfficientInfiniteCapacityGenerator();
-        
-        for (int i = 0; i < 10; i++)
-        {
-            beta.decadeIteration();
-        }
+        EfficientHashedGenerator newGen = new EfficientHashedGenerator();
         
         while (true)
         {
-            beta.decadeIteration();
+            newGen.decadeIteration();
         }
-        */        
-        HashedInfiniteCapacityGenerator omega = new HashedInfiniteCapacityGenerator();
-        /*
-        for (int i = 0; i < 10; i++)
-        {
-            omega.decadeIteration();
-        }
-        */
-        
-        while (true)
-        {
-            omega.decadeIteration();
-        }
-        
+
     }
 
 }

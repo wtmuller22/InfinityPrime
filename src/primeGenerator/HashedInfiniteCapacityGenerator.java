@@ -55,21 +55,16 @@ public class HashedInfiniteCapacityGenerator {
     private int getIdx(BigInteger num)
     {
         int right = num.remainder(BigInteger.TEN).intValue();
-        if (right == 1)
+        switch (right)
         {
-            return 0;
-        }
-        else if (right == 3)
-        {
-            return 1;
-        }
-        else if (right == 7)
-        {
-            return 2;
-        }
-        else
-        {
-            return 3;
+            case 1:
+                return 0;
+            case 3:
+                return 1;
+            case 7:
+                return 2;
+            default:
+                return 3;
         }
     }
     
